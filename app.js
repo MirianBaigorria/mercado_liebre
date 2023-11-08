@@ -1,10 +1,11 @@
 const express = require('express');
 const app = express();
 app.use(express.static('public'));
+const port= porcess.env.PORT || 3000;
 
 
-app.listen(3000, ()=>{
-    console.log('Servidor funcionando');
+app.listen(port, ()=>{
+    console.log('Servidor funcionando en el puerto '+ port );
 });
 
 app.get('/home', (req,res)=>{
