@@ -8,7 +8,7 @@ app.listen(port, ()=>{
     console.log('Servidor funcionando en el puerto '+ port );
 });
 
-app.get('/home', (req,res)=>{
+app.get('/', (req,res)=>{
     res.sendFile(__dirname + '/views/home.html');
 });
 
